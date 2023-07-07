@@ -147,10 +147,32 @@ while (numericArray[i] !== 32) {
 //__________________________________________________________________________________________________________
 
 /* ESERCIZIO 10
-    Partendo dall'array fornito e utilizzando un costrutto switch, genera un nuovo array composto dalle posizioni di ogni carattere all'interno
-    dell'alfabeto italiano.
+    Partendo dall'array fornito e utilizzando un costrutto switch, genera un nuovo array composto dalle posizioni di ogni carattere all'interno dell'alfabeto italiano.
     es. [f, b, e] --> [6, 2, 5]
 */
 const charactersArray = ["g", "n", "u", "z", "d"];
+
+console.log("--------- Array caratteri iniziale ---------\n", charactersArray);
+console.log("--------------- ESERCIZIO 10 ---------------");
+
+const alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
+const alphabet_num = [];
+const charactersArray_num = [];
+
+for (let i = 0; i < alphabet.length; i++) {
+  let x = 0;
+  x = i + 1;
+  alphabet_num.push(x);
+}
+
+for (let i = 0; i < charactersArray.length; i++) {
+  for (let j = 0; j < alphabet.length; j++) {
+    if (alphabet[j] === charactersArray[i]) {
+      charactersArray_num.push(alphabet_num[j]);
+    }
+  }
+}
+
+console.log(charactersArray_num);
 
 //__________________________________________________________________________________________________________
