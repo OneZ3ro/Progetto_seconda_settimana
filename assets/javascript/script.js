@@ -30,12 +30,24 @@ for (let i = 0; i < pets.length; i++) {
   pets_ordinati.push(pets[i]);
 }
 
-console.log(pets_ordinati.sort());
+pets_ordinati.sort();
+console.log(pets_ordinati);
+
 //__________________________________________________________________________________________________________
 
 /* ESERCIZIO 3
     Scrivi del codice per stampare nuovamente in console gli elementi dell'array "pets", questa volta in ordine invertito.
 */
+
+console.log("--------------- ESERCIZIO 3 ---------------");
+
+const pets_ordine_inverso = [];
+
+for (let i = 0; i < pets_ordinati.length; i++) {
+  pets_ordine_inverso.unshift(pets_ordinati[i]);
+}
+
+console.log(pets_ordine_inverso);
 
 //__________________________________________________________________________________________________________
 
