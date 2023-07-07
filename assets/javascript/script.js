@@ -149,7 +149,19 @@ console.log("Array delete last item", add_del_cars_NewObj);
 /* ESERCIZIO 7
     Scrivi del codice per salvare il primo elemento della proprietà "trims" di ogni auto nel nuovo array "justTrims", sotto definito.
 */
+
+console.log("--------------- ESERCIZIO 7 ---------------");
+
 const justTrims = [];
+
+for (let i = 0; i < cars.length; i++) {
+  for (let j = 0; j < cars[i].trims.length; j++) {
+    justTrims.push(cars[i].trims[j]);
+    break;
+  }
+}
+
+console.log("Array primo trim di ogni auto", justTrims);
 
 //__________________________________________________________________________________________________________
 
