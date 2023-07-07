@@ -76,6 +76,7 @@ console.log(pets_primoToUltimo);
 /* ESERCIZIO 5
     Dato il seguente array di oggetti, scrivi del codice per aggiungere ad ognuno di essi una proprietà "licensePlate" con valore a tua scelta.
 */
+
 const cars = [
   {
     brand: "Ford",
@@ -126,6 +127,22 @@ const justTrims = [];
 const numericArray = [
   6, 90, 45, 75, 84, 98, 35, 74, 31, 2, 8, 23, 100, 32, 66, 313, 321, 105,
 ];
+
+console.log("--------- Array numeri iniziale ---------\n", numericArray);
+console.log("--------------- ESERCIZIO 9 ---------------");
+
+let i = 0;
+
+while (numericArray[i] !== 32) {
+  console.log(numericArray[i]);
+  i++;
+
+  //per comprendere anche il 32. Se non lo si vuole comprendere basta togliere l'if
+  if (numericArray[i] === 32) {
+    console.log(32);
+    break;
+  }
+}
 
 //__________________________________________________________________________________________________________
 
