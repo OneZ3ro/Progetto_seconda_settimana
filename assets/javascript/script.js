@@ -98,6 +98,15 @@ const cars = [
   },
 ];
 
+console.log("------------ Array cars iniziale ------------\n", cars);
+
+console.log("--------------- ESERCIZIO 5 ---------------");
+
+const add_cars_licensePlate = cars.concat();
+
+add_cars_licensePlate.forEach((a) => (a.licensePlat = "AB 123 CD"));
+
+console.log(add_cars_licensePlate);
 //__________________________________________________________________________________________________________
 
 /* ESERCIZIO 6
