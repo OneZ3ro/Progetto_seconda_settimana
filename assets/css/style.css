@@ -1,4 +1,6 @@
 /* GENERALE */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
 body {
     font-family: 'Arial';
 }
@@ -22,6 +24,11 @@ main {
 
 h1 {
     font-size: 2rem;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
 }
 
 h3 {
@@ -49,7 +56,9 @@ header ul li {
     padding-left: 20px;
 }
 
-/* STYLE PER MAIN */
+/* ---------- STYLE PER MAIN ---------- */
+
+/* Striscia arancione */
 #back-col-orange {
     background-color: #F46600;
     padding-block: 10px;
@@ -58,6 +67,7 @@ header ul li {
     font-size: 0.93rem;
 }
 
+/* Banner */
 #img-background {
     background-image: url("../img/bg-image.png");
     background-size: contain;
@@ -71,7 +81,68 @@ header ul li {
     padding-top: 30px;
 }
 
+/* box delle 4 immagini */
+#box-4-img {
+    background-color: white;
+    box-shadow: 1px 1px 10px 0px lightgray;
+}
 
+
+
+
+
+/* 4 immagini una di fianco all'altra */
+#row-img {
+    padding: 20px;
+}
+
+.div-img-row {
+    display: inline-block;
+    height: 300px;
+    width: 222px;
+}
+
+#img-1 {
+    background-image: url("../img/img_1.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    margin-right: 21px;
+    box-shadow: 1px 1px 10px 0px #bababa;
+}
+
+#img-2 {
+    background-image: url("../img/img_2.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    margin-right: 21px;
+    box-shadow: 2px 2px 10px 0px #bababa;
+}
+
+#img-3 {
+    background-image: url("../img/img_3.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    margin-right: 21px;
+    box-shadow: 3px 3px 10px 0px #bababa;
+}
+
+#img-4 {
+    background-image: url("../img/img_4.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px 0px #bababa;
+}
+
+
+
+
+
+
+/* Prima immagine grande */
 .big-img-mod {
     width: 100%;
 }
