@@ -98,8 +98,6 @@ const cars = [
   },
 ];
 
-console.log("------------ Array cars iniziale ------------\n", cars);
-
 console.log("--------------- ESERCIZIO 5 ---------------");
 
 const add_cars_licensePlate = cars.concat();
@@ -136,13 +134,12 @@ const NewObj = {
 const add_del_cars_NewObj = cars.concat();
 
 add_del_cars_NewObj.push(NewObj);
-console.log("Array con nuovo elemento\n", add_del_cars_NewObj);
 
 for (let i = 0; i < add_del_cars_NewObj.length; i++) {
   add_del_cars_NewObj[i].trims.pop();
 }
 
-console.log("Array delete last item", add_del_cars_NewObj);
+console.log("Array aggiunta oggetto e elim. ultimo trims", add_del_cars_NewObj);
 
 //__________________________________________________________________________________________________________
 
