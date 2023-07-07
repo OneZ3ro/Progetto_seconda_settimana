@@ -114,6 +114,24 @@ console.log(add_cars_licensePlate);
     Successivamente, rimuovi l'ultimo elemento della proprietà "trims" da ogni auto.
 */
 
+console.log("--------------- ESERCIZIO 6 ---------------");
+
+const NewObj = { elemento: "Nuovo" };
+const add_cars_NewObj = cars.concat();
+const delete_cars_lastTrimsElem = cars.concat();
+
+add_cars_NewObj.push(NewObj);
+console.log(add_cars_NewObj);
+
+// idea probabile sbagliata per seconda parte
+// for (let i = 0; i < delete_cars_lastTrimsElem.length; i++) {
+//   for (let j = 0; j < delete_cars_lastTrimsElem[i].length; j++) {
+//     if (delete_cars_lastTrimsElem[j] === "trims") {
+//       trims.
+//     }
+//   }
+// }
+
 //__________________________________________________________________________________________________________
 
 /* ESERCIZIO 7
