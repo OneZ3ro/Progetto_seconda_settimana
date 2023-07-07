@@ -166,9 +166,25 @@ console.log("Array primo trim di ogni auto", justTrims);
 //__________________________________________________________________________________________________________
 
 /* ESERCIZIO 8
-    Cicla l'array "cars" e costruisci un if/else statament per mostrare due diversi messaggi in console. Se la prima lettera della proprietà
-    "color" ha valore "b", mostra in console "Fizz". Altrimenti, mostra in console "Buzz".
+    Cicla l'array "cars" e costruisci un if/else statament per mostrare due diversi messaggi in console. Se la prima lettera della proprietà "color" ha valore "b", mostra in console "Fizz". Altrimenti, mostra in console "Buzz".
 */
+
+console.log("--------------- ESERCIZIO 8 ---------------");
+
+const arr_colour = [];
+
+for (let i = 0; i < cars.length; i++) {
+  arr_colour.push(cars[i].color.split(""));
+  for (let j = 0; j < arr_colour[i].length; j++) {
+    if (arr_colour[i][j] === "b") {
+      console.log("Fizz");
+      break;
+    } else {
+      console.log("Buzz");
+      break;
+    }
+  }
+}
 
 //__________________________________________________________________________________________________________
 
