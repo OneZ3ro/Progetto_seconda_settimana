@@ -104,8 +104,19 @@ console.log("--------------- ESERCIZIO 5 ---------------");
 
 const add_cars_licensePlate = cars.concat();
 
-add_cars_licensePlate.forEach((a) => (a.licensePlat = "AB 123 CD"));
-
+for (let i = 0; i < cars.length; i++) {
+  switch (add_cars_licensePlate[i].brand) {
+    case "Ford":
+      add_cars_licensePlate[i].licensePlate = "AB 123 CD";
+      break;
+    case "Peugeot":
+      add_cars_licensePlate[i].licensePlate = "EF 456 GH";
+      break;
+    case "Volkswagen":
+      add_cars_licensePlate[i].licensePlate = "IJ 789 KL";
+      break;
+  }
+}
 console.log(add_cars_licensePlate);
 //__________________________________________________________________________________________________________
 
