@@ -28,6 +28,7 @@ h1 {
 
 h2 {
     font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
     font-weight: 500;
 }
 
@@ -41,6 +42,14 @@ a {
     font-size: 0.88rem;
     color: #146F77;
     text-decoration: none;
+}
+
+.h2-and-a h2, .h2-and-a a{
+    display: inline-block;
+}
+
+.h2-and-a a {
+    padding-left: 10px;
 }
 
 /* STYLE PER HEADER */
@@ -100,13 +109,6 @@ header ul li {
     padding-left: 20px;
 }
 
-.h2-and-a h2, .h2-and-a a{
-    display: inline-block;
-}
-
-.h2-and-a a {
-    padding-left: 20px;
-}
 
 /* 4 immagini una di fianco all'altra */
 #row-img {
@@ -154,12 +156,12 @@ header ul li {
     box-shadow: 5px 5px 10px 0px #bababa;
 }
 
-
-
-
-
-
-/* Prima immagine grande */
+/* Dimensionamento prima e seconda immagine grande */
 .big-img-mod {
     width: 100%;
+}
+
+/* Centratura del h2 e a delle immagini grandi */
+.box-big-img .h2-and-a {
+    text-align: center;
 }
