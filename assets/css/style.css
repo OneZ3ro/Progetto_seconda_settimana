@@ -1,0 +1,65 @@
+/* GENERALE */
+body {
+    font-family: 'Arial';
+    font-size: 1rem;
+}
+
+main {
+    padding-inline: 30px;
+}
+
+.logo-background-color {
+    background-color: #222F3F;
+}
+
+.light-logo-background-color {
+    background-color: #364759;
+    color: white;
+}
+
+/* STYLE PER HEADER */
+header div.logo-background-color img {
+    height: 40px;
+    padding-block: 10px;
+    padding-left: 30px;
+}
+
+header ul {
+    padding-block: 10px;
+    font-size: 0.9rem;
+}
+
+#first-li {
+    padding-left: 35px;
+}
+
+header ul li {
+    display:  inline-block;
+    padding-left: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.big-img-mod {
+    width: 100%;
+}
