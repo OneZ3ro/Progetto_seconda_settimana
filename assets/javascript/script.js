@@ -104,7 +104,7 @@ console.log("--------------- ESERCIZIO 5 ---------------");
 
 const add_cars_licensePlate = cars.concat();
 
-for (let i = 0; i < cars.length; i++) {
+for (let i = 0; i < add_cars_licensePlate.length; i++) {
   switch (add_cars_licensePlate[i].brand) {
     case "Ford":
       add_cars_licensePlate[i].licensePlate = "AB 123 CD";
@@ -127,21 +127,22 @@ console.log(add_cars_licensePlate);
 
 console.log("--------------- ESERCIZIO 6 ---------------");
 
-const NewObj = { elemento: "Nuovo" };
-const add_cars_NewObj = cars.concat();
-const delete_cars_lastTrimsElem = cars.concat();
+const NewObj = {
+  brand: "Opel",
+  model: "Meriva",
+  color: "blue",
+  trims: ["space", "disel"],
+};
+const add_del_cars_NewObj = cars.concat();
 
-add_cars_NewObj.push(NewObj);
-console.log(add_cars_NewObj);
+add_del_cars_NewObj.push(NewObj);
+console.log("Array con nuovo elemento\n", add_del_cars_NewObj);
 
-// idea probabile sbagliata per seconda parte
-// for (let i = 0; i < delete_cars_lastTrimsElem.length; i++) {
-//   for (let j = 0; j < delete_cars_lastTrimsElem[i].length; j++) {
-//     if (delete_cars_lastTrimsElem[j] === "trims") {
-//       trims.
-//     }
-//   }
-// }
+for (let i = 0; i < add_del_cars_NewObj.length; i++) {
+  add_del_cars_NewObj[i].trims.pop();
+}
+
+console.log("Array delete last item", add_del_cars_NewObj);
 
 //__________________________________________________________________________________________________________
 
