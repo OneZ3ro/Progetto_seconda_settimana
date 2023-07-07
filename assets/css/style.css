@@ -52,7 +52,8 @@ a {
     padding-left: 10px;
 }
 
-/* STYLE PER HEADER */
+
+/* --------------- STYLE PER HEADER --------------- */
 header div.logo-background-color img {
     height: 40px;
     padding-block: 10px;
@@ -73,7 +74,8 @@ header ul li {
     padding-left: 20px;
 }
 
-/* ---------- STYLE PER MAIN ---------- */
+
+/* --------------- STYLE PER MAIN --------------- */
 
 /* Striscia arancione */
 #back-col-orange {
@@ -164,4 +166,29 @@ header ul li {
 /* Centratura del h2 e a delle immagini grandi */
 .box-big-img .h2-and-a {
     text-align: center;
+}
+
+
+/* --------------- STYLE PER FOOTER --------------- */
+
+/* Back to top */
+#back-to-top {
+    padding-block: 15px;
+    text-align: center;
+}
+
+#back-to-top a {
+    font-weight: 500;
+    color: white;
+    text-decoration: underline;
+}
+
+/* Logo grande */
+#logo-grande {
+    padding-block: 65px;
+    text-align: center;
+}
+
+#logo-grande img{
+    height: 60px;
 }
