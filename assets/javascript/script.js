@@ -22,6 +22,15 @@ for (let i = 0; i < pets.length; i++) {
     Scrivi del codice per ordinare alfabeticamente gli elementi dell'array "pets".
 */
 
+console.log("--------------- ESERCIZIO 2 ---------------");
+
+const pets_ordinati = [];
+
+for (let i = 0; i < pets.length; i++) {
+  pets_ordinati.push(pets[i]);
+}
+
+console.log(pets_ordinati.sort());
 //__________________________________________________________________________________________________________
 
 /* ESERCIZIO 3
