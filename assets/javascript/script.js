@@ -10,6 +10,7 @@ REGOLE
     Dato il seguente array, scrivi del codice per stampare ogni elemento dell'array in console.
 */
 const pets = ["dog", "cat", "hamster", "redfish"];
+console.log("------------ Array pets iniziale ------------\n", pets);
 
 console.log("--------------- ESERCIZIO 1 ---------------");
 for (let i = 0; i < pets.length; i++) {
@@ -54,6 +55,21 @@ console.log(pets_ordine_inverso);
 /* ESERCIZIO 4
     Scrivi del codice per spostare il primo elemento dall'array "pets" in ultima posizione.
 */
+
+console.log("--------------- ESERCIZIO 4 ---------------");
+
+const pets_primoToUltimo = [];
+
+for (let i = 0; i < pets.length; i++) {
+  pets_primoToUltimo.push(pets[i]);
+}
+
+const primo_animale = pets_primoToUltimo[0];
+
+pets_primoToUltimo.shift();
+pets_primoToUltimo.push(primo_animale);
+
+console.log(pets_primoToUltimo);
 
 //__________________________________________________________________________________________________________
 
